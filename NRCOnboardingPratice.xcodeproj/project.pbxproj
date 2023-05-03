@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		86CCF9D32A0241F1007B3AC9 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CCF9D22A0241F1007B3AC9 /* OnboardingCell.swift */; };
-		86CCF9D52A024DBF007B3AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CCF9D42A024DBF007B3AC9 /* ViewController.swift */; };
 		86D265952A00EBF40003E20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D265942A00EBF40003E20D /* AppDelegate.swift */; };
 		86D265972A00EBF40003E20D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D265962A00EBF40003E20D /* SceneDelegate.swift */; };
 		86D2659C2A00EBF40003E20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D2659A2A00EBF40003E20D /* Main.storyboard */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		86CCF9D22A0241F1007B3AC9 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
-		86CCF9D42A024DBF007B3AC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86D265912A00EBF30003E20D /* NRCOnboardingPratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NRCOnboardingPratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D265942A00EBF40003E20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D265962A00EBF40003E20D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 			children = (
 				86D265942A00EBF40003E20D /* AppDelegate.swift */,
 				86D265962A00EBF40003E20D /* SceneDelegate.swift */,
-				86CCF9D42A024DBF007B3AC9 /* ViewController.swift */,
 				86D265AA2A013F570003E20D /* OnboardingViewController.swift */,
 				86CCF9D22A0241F1007B3AC9 /* OnboardingCell.swift */,
 				86D2659A2A00EBF40003E20D /* Main.storyboard */,
@@ -147,7 +144,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86CCF9D52A024DBF007B3AC9 /* ViewController.swift in Sources */,
 				86D265952A00EBF40003E20D /* AppDelegate.swift in Sources */,
 				86CCF9D32A0241F1007B3AC9 /* OnboardingCell.swift in Sources */,
 				86D265AB2A013F570003E20D /* OnboardingViewController.swift in Sources */,
