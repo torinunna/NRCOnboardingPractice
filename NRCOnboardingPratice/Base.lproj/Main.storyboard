@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,20 +20,117 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_onboarding_bg" translatesAutoresizingMaskIntoConstraints="NO" id="yOs-o0-o5d">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pHz-JR-yIl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="652"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mbu-op-E26">
+                                    <size key="itemSize" width="414" height="652"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCell" id="O5V-Lt-N6r" customClass="OnboardingCell" customModule="NRCOnboardingPratice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="652"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vCJ-NR-GC2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="652"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XZ7-W2-Lxk">
+                                                    <rect key="frame" x="82" y="151" width="250" height="250"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="250" id="3Ln-zE-JXu"/>
+                                                        <constraint firstAttribute="width" constant="250" id="ELU-e8-EWO"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSIC MOVES YOU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CC-He-3pC">
+                                                    <rect key="frame" x="114" y="477" width="186.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're first race, last mile, or push out the door whatever your pace, distance or need, we've got the playlist to match" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C56-iK-7d8">
+                                                    <rect key="frame" x="50" y="521" width="314" height="61"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="C56-iK-7d8" firstAttribute="centerX" secondItem="vCJ-NR-GC2" secondAttribute="centerX" id="0aE-wU-bUT"/>
+                                                <constraint firstAttribute="bottom" secondItem="C56-iK-7d8" secondAttribute="bottom" constant="70" id="49D-W8-bRg"/>
+                                                <constraint firstItem="4CC-He-3pC" firstAttribute="centerX" secondItem="vCJ-NR-GC2" secondAttribute="centerX" id="Bbt-V9-4tc"/>
+                                                <constraint firstItem="XZ7-W2-Lxk" firstAttribute="centerY" secondItem="vCJ-NR-GC2" secondAttribute="centerY" constant="-50" id="U6o-4P-LK5"/>
+                                                <constraint firstItem="C56-iK-7d8" firstAttribute="leading" secondItem="vCJ-NR-GC2" secondAttribute="leading" constant="50" id="eKV-PW-e9k"/>
+                                                <constraint firstItem="C56-iK-7d8" firstAttribute="top" secondItem="4CC-He-3pC" secondAttribute="bottom" constant="20" id="eyQ-A9-0Fo"/>
+                                                <constraint firstItem="XZ7-W2-Lxk" firstAttribute="centerX" secondItem="vCJ-NR-GC2" secondAttribute="centerX" id="sGu-oH-G7A"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="652"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="C56-iK-7d8" id="WoZ-OZ-mzt"/>
+                                            <outlet property="thumbnailImageView" destination="XZ7-W2-Lxk" id="aYI-RY-fXs"/>
+                                            <outlet property="titleLabel" destination="4CC-He-3pC" id="XHy-74-GWZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gRj-PV-Jej">
+                                <rect key="frame" x="149.5" y="736" width="115.5" height="26"/>
+                            </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="z7X-WD-qHh">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thg-m9-3CJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="206.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="JOIN NOW">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qut-PL-F6n">
+                                        <rect key="frame" x="207.5" y="0.0" width="206.5" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="LOGIN">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RZ8-g5-DeB"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yOs-o0-o5d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1FJ-AO-qB3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pHz-JR-yIl" secondAttribute="trailing" id="53C-3c-bQA"/>
+                            <constraint firstItem="pHz-JR-yIl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="92l-mf-okE"/>
+                            <constraint firstItem="gRj-PV-Jej" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JRq-PF-Znb"/>
+                            <constraint firstItem="z7X-WD-qHh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jad-tM-zA3"/>
                             <constraint firstAttribute="bottom" secondItem="yOs-o0-o5d" secondAttribute="bottom" id="Oon-cP-2m9"/>
                             <constraint firstItem="yOs-o0-o5d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PU2-fb-9Mt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yOs-o0-o5d" secondAttribute="trailing" id="Q2M-T1-t3I"/>
+                            <constraint firstItem="gRj-PV-Jej" firstAttribute="top" secondItem="pHz-JR-yIl" secondAttribute="bottom" constant="40" id="Q4N-1J-umc"/>
+                            <constraint firstItem="pHz-JR-yIl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="URi-Yp-61M"/>
+                            <constraint firstItem="z7X-WD-qHh" firstAttribute="top" secondItem="gRj-PV-Jej" secondAttribute="bottom" constant="40" id="sgh-lH-F56"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z7X-WD-qHh" secondAttribute="bottom" id="vtP-FS-gzc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z7X-WD-qHh" secondAttribute="trailing" id="x69-9g-Ew8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="pHz-JR-yIl" id="nnc-qA-f1z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="91"/>
+            <point key="canvasLocation" x="18.840579710144929" y="90.401785714285708"/>
         </scene>
     </scenes>
     <resources>
