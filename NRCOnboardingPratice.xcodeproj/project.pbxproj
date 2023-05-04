@@ -64,9 +64,9 @@
 				86D265962A00EBF40003E20D /* SceneDelegate.swift */,
 				86D265AA2A013F570003E20D /* OnboardingViewController.swift */,
 				86CCF9D22A0241F1007B3AC9 /* OnboardingCell.swift */,
+				86D265A82A00F0820003E20D /* OnboardingMessage.swift */,
 				86D2659A2A00EBF40003E20D /* Main.storyboard */,
 				86D2659D2A00EBF40003E20D /* Assets.xcassets */,
-				86D265A82A00F0820003E20D /* OnboardingMessage.swift */,
 				86D2659F2A00EBF40003E20D /* LaunchScreen.storyboard */,
 				86D265A22A00EBF40003E20D /* Info.plist */,
 			);
