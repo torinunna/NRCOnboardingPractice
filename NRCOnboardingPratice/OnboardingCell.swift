@@ -9,6 +9,8 @@ import UIKit
 
 class OnboardingCell: UICollectionViewCell {
     
+    static let identifier = "OnboardingCell"
+    
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
